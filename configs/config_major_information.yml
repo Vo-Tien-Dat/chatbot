@@ -1,0 +1,24 @@
+language: vi
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: RegexEntityExtractor
+    case_sensitive: false
+    use_lookup_tables: true
+    use_regexes: true
+    use_word_boundaries: true
+  - name: DIETClassifier
+    entity_recognition: false
+ 
+policies:
+  - name: MemoizationPolicy
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100
+  - name: RulePolicy
+assistant_id: 20230412-111502-few-tower
+
+models:
+  path: "models"
+  model_name: "nlu_admission_informations"

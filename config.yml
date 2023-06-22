@@ -69,8 +69,7 @@ pipeline:
   - name: DIETClassifier
     entity_recognition: false
     epochs: 100
-  - name: RegexEntityExtractor
-    use_lookup_tables: true
+    
 policies:
   - name: MemoizationPolicy
   - name: TEDPolicy
