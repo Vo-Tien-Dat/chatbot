@@ -2,14 +2,13 @@ language: vi
 pipeline:
   - name: WhitespaceTokenizer
   - name: LexicalSyntacticFeaturizer
-  - name: CountVectorsFeaturizer
+  - name: CRFEntityExtractor
   - name: RegexEntityExtractor
     case_sensitive: false
     use_lookup_tables: true
-    use_regexes: true
+    use_regexes: false
     use_word_boundaries: true
   - name: DIETClassifier
-  - name: CRFEntityExtractor
  
 policies:
   - name: MemoizationPolicy

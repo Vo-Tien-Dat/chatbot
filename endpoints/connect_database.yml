@@ -1,0 +1,10 @@
+tracker_store:
+    type: SQL
+    dialect: "postgresql"
+    url: "localhost:5432"
+    db: "postgres"
+    username: "postgres"
+    password: "votiendat"
+    query: 
+      driver: "my-driver"
+    # table name to store conversation history

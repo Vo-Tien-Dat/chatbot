@@ -1,7 +1,7 @@
 version: "3.1"
 
 nlu:
-
+# yêu cầu tiêu chí tuyển sinh của trường
   - intent: ask_admission_criteria
     examples: |
       - Trường yêu cầu những điều kiện gì cho việc xét tuyển vào trường? 
@@ -9,7 +9,8 @@ nlu:
       - Điều kiện gì để được xét tuyển vào trường? 
       - Cần đạt tiêu chí gì để xét tuyển vào trường?
       - Có thể kể tên tiêu chí cần đạt để xét tuyển vào trường không? 
-  
+
+# Yêu cầu phương thức tuyển sinh của trường 
   - intent: ask_admission_method
     examples: |
       - Những phương thức tuyển sinh của trường? 
@@ -17,6 +18,7 @@ nlu:
       - Trường có những phương thức tuyển sinh nào? 
       - Phương thức để xét tuyển vào trường? 
 
+# Yêu cầu thời gian đăng ký
   - intent: ask_register_time
     examples: |
       - Thời gian đăng ký để xét tuyển vào trường? 
@@ -25,7 +27,9 @@ nlu:
       - Đăng ký xét tuyển vào khi nào? 
       - Khi nào trường cho phép đăng ký xét tuyển ? 
       - Kể cho tôi ngày xét tuyển vào trường? 
-      
+
+
+# yêu cầu kiểm tra thời gian đăng ký xét tuyển
   - intent: check_register_time
     examples: |
       - Có phải thời gian đăng ký xét tuyển vào ngày [10]{"entity": "day"} tháng [5]{"entity": "month"} [2023]{"entity": "year"} phải không ? 
@@ -39,7 +43,20 @@ nlu:
       - Trường sẽ tuyển sinh bao nhiêu sinh viên? 
       - Số lượng sinh viên đạt tiêu chí để tuyển sinh vào trường? 
 
-  - intent: ask_register_step
+# yêu cầu về các bước cần chuẩn bị chọn hồ so khi truyển sinh
+  - intent: ask_register_document
     examples: |
-      - Các bước để tuyển sinh vào trường ? 
-      - Cần những gì để tuyển sinh vào trường?   
+      - Cần những gì để tuyển sinh vào trường? 
+      - Cần chuẩn bị những hồ sơ khi tuyến sinh vào trường? 
+      - Tôi cần chuẩn bị những giấy tờ gì để đăng ký tuyển sinh vào trường? 
+      - Trường yêu cầu những giầy tờ tuyển sinh khi ứng tuyển vào trường? 
+
+  - intent: check_register_document
+    examples: |
+      - {{"entity": "document"}} có thể đăng ký xét tuyển vào trường không?
+  
+  - intent: ask_register_document_of_admission_method
+    examples: |
+      - Cần chuẩn bị gì để tuyển sinh vào trường với phương thức {{"entity": "admission_method"}}?
+      - Tôi cần những giấy tờ gì để đăng ký tuyển sinh của trường thông qua phương thức {{"entity": "admission_method"}} 
+      
