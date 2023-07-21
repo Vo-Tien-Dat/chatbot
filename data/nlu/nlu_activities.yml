@@ -1,0 +1,22 @@
+version: "3.1"
+
+nlu:
+  - intent: ask_activity_list
+    examples: |
+      - Trường có những hoạt động sinh viên nào ?
+      - Danh sách các hoạt động của trường trong những năm qua ?
+      - Trường tổ chức những hoạt động gì cho sinh viên ?
+      - Trường thường tổ chức hoạt động gì hằng năm ? 
+
+  - intent: ask_next_activity
+    examples: | 
+      - Những hoạt động của trường sắp tới ? 
+      - Diễn ra những hoạt động nào sắp tới của trường ? 
+      - Trường có tổ chức hoạt động nào sắp tới không ? 
+      - Trường đang chuẩn bị sự kiện gì sắp tới ? 
+
+  - intent: check_activity
+    examples: |
+      - Trường có tổ chức hoạt động [hoạt động ngoại khóa](activity_name) ? 
+      - Hoạt động [hoạt động ngoại khóa](actvity_name) có được diễn ra không ? 
+      - [Hoạt động](activity_name) có được trưởng tổ chức không ? 

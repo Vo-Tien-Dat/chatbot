@@ -1,0 +1,28 @@
+version: "3.1"
+
+intents: 
+  - ask_list_of_scholarships
+  - ask_scholarship_details
+  - check_scholarship
+
+entities:
+  - scholarship_name
+
+actions:  
+  - action_list_of_scholarships
+
+responses:
+  utter_greet:
+    - text: "Tôi đây! Tôi có thể giúp gì được cho bạn ?"
+  
+  utter_goodbye: 
+    - text: "Chào tạm biệt"
+
+  utter_fallback: 
+    - text: "Tôi  không xác định rõ ý định của bạn"
+
+
+
+session_config:
+  session_expiration_time: 60  # value in minutes
+  carry_over_slots_to_new_session: true

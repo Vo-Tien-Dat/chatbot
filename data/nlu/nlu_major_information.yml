@@ -1,0 +1,35 @@
+version: "3.1"
+
+nlu:
+
+  - intent: ask_major_overview
+    examples: |
+      - những ngành học của trường đang đào tạo? 
+      - ngành học của trường ? 
+      - ngành học ? 
+      - trường đào tạo ngành học nào ? 
+      - ngành nào trường đang đào tạo ? 
+      - trường tuyển sinh ngành học nào?
+
+  - intent: check_major_details
+    examples: |
+      - trường có ngành học [công nghệ thông tin](major) không? 
+      - trường có ngành học [kế toán](major) không ? 
+      - trường có đào tạo [công nghệ thông tin](major) không?
+      - trường có đào tạo [công nghệ](major) không ? 
+      - trường có đào tạo [điện tử](major) không ? 
+      - [công nghệ thông tin(major) có được trường đào tạo không? 
+      - Có chương trình đào tạo về [công nghệ thông tin](major) tại trường không? 
+      - Trường có chuyên ngành [công nghệ thông tin](major) không ? 
+      - Có chuyên ngành nào về [lập trình](major) tại trường không? 
+
+
+  - lookup: major
+    examples: |
+      - công nghệ thông tin
+      - kế toán
+      - điện tử
+      - đa phương tiện
+      - điện tử viễn thông
+      - quản trị kinh doanh
+      - điện tử - viễn thông

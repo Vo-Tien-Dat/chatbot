@@ -1,8 +1,0 @@
-version: "3.1"
-
-nlu:
-  - intent: score
-    examples: |
-      - the average point of the student
-      - the average point of the students
-      - list student in class

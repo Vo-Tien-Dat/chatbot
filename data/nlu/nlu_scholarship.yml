@@ -1,0 +1,38 @@
+version: "3.1"
+
+nlu:
+  - synonym: scholarship_name
+    examples: |
+      - học bổng khuyến học 
+      - miễn giám học phí
+      - hỗ trợ tài chính
+      - khoản vay sinh viên
+      - học bổng du học
+      - học bổng chuyển tiếp sinh viên
+# Liệt kê danh sách học bông của trường
+  - intent: ask_list_of_scholarships
+    examples: |
+      - Danh sách các loại học bổng của trường hiện có?
+      - Các loại học bổng của trường ?
+      - Liệt kê các loại học bổng của trường ?
+      - Trường có những học bổng gì?
+      - Thông tin về học bổng của trường? 
+
+  - intent: ask_scholarship_details
+    examples: |
+      - Chi tiết về học bổng [học bổng khuyến khích](scholarship_name)?
+      - Thông tin về học bổng [học bổng khuyến khích](scholarship_name)?
+
+# kiểm tra một học bổng có trong danh sách của trường 
+  - intent: check_scholarship
+    examples: |
+      - Trường có học bổng [học bổng khuyến khích](scholarship_name) này không ?
+      - Trong các loại học bổng của trường có học bổng [học bổng khuyến khích](scholarship_name) này không ?
+      - [học bổng khuyến học](scholarhip_name) có loại học bổng này trong trường không ?
+      - Trường có chương trình [học bổng đại học](scholarship_name)  này không ? 
+  
+
+
+  
+
+

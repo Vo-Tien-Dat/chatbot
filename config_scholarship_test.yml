@@ -1,0 +1,33 @@
+recipe: default.v1
+# assistant_id:  default_scholarship
+language: vi
+pipeline:
+  # - name: SpacyNLP
+  #   model: en_core_web_md
+  # - name: SpacyTokenizer
+  # - name: SpacyFeaturizer
+  - name: VietnameseTokenizer
+  # - name: SentimentAnalyzer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzers: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 10
+    constrain_similarities: true
+  
+  - name: EntitySynonymMapper
+  - name: FallbackClassifier
+    threshold: 0.5
+    ambiguity_threshold: 0.1
+ 
+policies:
+  - name: MemoizationPolicy
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 3
+  - name: RulePolicy
+assistant_id: 20230412-111502-few-tower

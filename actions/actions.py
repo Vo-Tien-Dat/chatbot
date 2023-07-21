@@ -44,3 +44,18 @@ class ActionScore(Action):
         dispatcher.utter_message(text="score is very good")
 
         return []
+    
+class ActionAdmission(Action): 
+    def name(self) -> Text:
+        return 'ask_admission_crieteria'
+    
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        return []
+    
+
+class ActionScholarship(Action):
+    def name(self) -> Text: 
+        return 'check_scholarship'
+    
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text]]: 
+        return []

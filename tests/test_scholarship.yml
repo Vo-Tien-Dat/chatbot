@@ -1,0 +1,8 @@
+- text: 'Danh sách các loại học bổng của trường? '
+  intent: ask_list_of_scholarships
+
+- text: 'Trường có học bổng khuyến học này không ? '
+  intent: check_scholarship
+
+- text: 'Danh sách các loại học bổng của trường'
+  intent: ask_list_of_scholarships

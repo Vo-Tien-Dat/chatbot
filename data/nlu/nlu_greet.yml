@@ -1,0 +1,26 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - xin chào
+      - chào buổi sáng
+      - chào buổi tối
+      - Bạn có thể giúp tôi được không ?
+      - Chào buổi chiều
+      - Cùng bắt đầu nào? 
+
+  - intent: greet_introduce
+    examples: |
+      - Bạn đến từ đâu? 
+      - Công việc của bạn là gì? 
+      - Ai là người tạo ra bạn? 
+
+
+  - intent: greet_with_infor
+    examples: | 
+      - Tôi tên là [Vo Dat]{"entity": "person_name"}
+      - Tôi là [Vo Dat]{"entity": "person_name"}
+      - Xin chào! Tôi tên là [Vo Dat]{"entity": "person_name"}
+      - Chào! Tôi tên là [Vo Dat]{"entity": "person_name"}
+  
