@@ -1,0 +1,40 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - xin chào
+      - chào buổi sáng
+      - chào buổi tối
+      - Bạn có thể giúp tôi được không ?
+      - Chào buổi chiều
+      - Cùng bắt đầu nào? 
+
+  - intent: greet_introduce
+    examples: |
+      - Bạn đến từ đâu? 
+      - Công việc của bạn là gì? 
+      - Ai là người tạo ra bạn? 
+
+  - intent: greet_with_infor
+    examples: | 
+      - Tôi tên là [Vo Dat](person_name)
+      - Tôi là [Vo Dat](person_name)
+      - Xin chào! Tôi tên là [Vo Dat](person_name)
+      - Chào! Tôi tên là [Vo Dat](person_name)
+  
+  - intent: thanks
+    examples: |
+       - Cảm ơn bạn đã giúp tôi
+       - Cảm ơn nhiều nhé
+       - Cảm ơn 
+       - Tôi biết ơn bạn rất nhiều 
+       - Cảm ơn nhiều 
+
+  - intent: goodbye
+    examples: |
+      - Tạm biêt bạn
+      - Hẹn bàn lần sau 
+      - Tạm biệt 
+      - Hẹn lần sau 
+      - Hẹn gặp lại

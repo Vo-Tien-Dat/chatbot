@@ -1,0 +1,30 @@
+{
+    "scholarship": {
+        "1": {
+            "name": "Học bổng toàn phần", 
+            "description": "Học bổng này sẽ giúp cho sinh viên được miễn toàn bộ học phí và chi phí sinh hoạt và các chi phí phát sinh khác trong suốt quá trình học",
+            "detail": {}
+        },
+        "2": {
+            "name": "Học bổng bán phần", 
+            "description": "Học bổng này giúp cho sinh viên được miễn một phần học phí hoặc các chi phí phát sinh trong suốt qua trình học tập tại trường ",
+            "detail": {
+
+            }
+        },
+        "3": {
+            "name": "Học bổng khuyến học", 
+            "description": "Học bổng này dành cho những sinh viên có thành tích học tập xuất sắc trong các kỳ thi hoặc cả năm học",
+            "detail": {
+
+            }
+        },
+        "4": {
+            "name": "Học bổng nghiên cứu khoa học", 
+            "description": "Học bổng nghiên cứu khoa học này hỗ trợ sinh viên thực hiện nghiên cứu khoa học trong lĩnh vực doanh nghiệp và kinh tế",
+            "detail": {
+                
+            }
+        }
+    }
+}

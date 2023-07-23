@@ -1,0 +1,15 @@
+version: "3.1"
+
+stories: 
+
+  - story: list of scholarship
+    steps: 
+    - intent: ask_list_of_scholarships
+    - action: action_list_of_scholarships
+
+  - story: detail scholarship
+    steps: 
+    - intent: ask_scholarship_details
+    - action: action_detail_scholarship
+
+  

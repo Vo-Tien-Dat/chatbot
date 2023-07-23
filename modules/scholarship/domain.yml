@@ -1,0 +1,25 @@
+version: "3.1"
+
+intents: 
+  - ask_list_of_scholarships
+  - ask_scholarship_details
+  - check_scholarship
+
+entities:
+  - scholarship_name
+
+actions:  
+  - action_list_of_scholarships
+  - action_detail_scholarship
+
+responses:
+
+  utter_please_rephrase_scholarship: 
+  - text: Vui lòng cung câp thêm về tên học bổng ?  
+  
+  utter_please_rephrase: 
+  - text: Tôi rất xin lỗi, tôi không hiểu ý bạn là gì
+
+session_config:
+  session_expiration_time: 60  # value in minutes
+  carry_over_slots_to_new_session: true

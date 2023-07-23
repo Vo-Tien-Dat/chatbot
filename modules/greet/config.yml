@@ -1,0 +1,32 @@
+version: "2.0"
+recipe: "default.v1"
+language: vi
+pipeline:
+  # - name: VietnameseTokenizer
+  - name: WhitespaceTokenizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+    OOV_token: "__oov__"
+    max_df: 0.9
+    min_df: 5
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    constrain_similarities: true
+    entity_recognition: true
+  - name: FallbackClassifier
+    threshold: 0.7
+
+policies:
+- name: MemoizationPolicy
+- name: TEDPolicy
+  constrain_similarities: true
+  max_history: 5
+  epochs: 100
+- name: RulePolicy
+
+model:
+  name: admission
+assistant_id: 20230721-171547-grandioso-diffraction

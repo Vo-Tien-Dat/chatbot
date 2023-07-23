@@ -1,0 +1,93 @@
+version: "3.1"
+
+nlu:
+  - synonym: scholarship_name
+    examples: |
+      - học bổng khuyến học 
+      - miễn giám học phí
+      - hỗ trợ tài chính
+      - khoản vay sinh viên
+      - học bổng du học
+      - học bổng chuyển tiếp sinh viên
+# NHÓM HỎI VỀ THÔNG TIN CHUNG LIÊN QUAN ĐẾN HỌC BỔNG
+  - intent: ask_list_of_scholarships
+    examples: |
+      - Danh sách các loại học bổng của trường hiện có?
+      - Các loại học bổng của trường ?
+      - Liệt kê các loại học bổng của trường ?
+      - Trường có những học bổng gì?
+      - Thông tin về học bổng của trường? 
+
+  # - intent: ask_general_scholarship
+  #   examples: |
+  #     - Thông tin về học bổng [học bổng du học](scholarship_name)? 
+  #     - Bạn có biết về học bổng [học bổng du học](scholarship_name)? 
+  #     - Giới thiệu về học bổng [học bổng du học](sholarship_name)? 
+
+# NHÓM VỀ MÔ TẢ ĐIỀU KIỆN ĐƯỢC CẤP HỌC BỔNG
+
+  - intent: ask_scholarship_conditions
+    examples: |
+      - Điều kiện để đạt học bổng là gì ? 
+      - Yêu cầu đạt học bổng ? 
+      - Tôi cần đáp ứng những gì để đạt được học bổng ?
+      - Điều kiện học bổng ?  
+
+  - intent: ask_scholarship_documents ? 
+    examples: |
+      - Cần nộp hồ sơ gì để đạt học bổng? 
+      - Tôi cần chuẩn bị những giấy tờ gì để nộp hồ sơ học bổng ? 
+      - Hồ sơ cần nộp để đạt học bổng gồm những giấy tờ nào? 
+      - Hồ sơ học bổng ? 
+
+  - intent: ask_scholarship_deadline
+    examples: |
+      - Thời gian nộp hồ sơ học bổng khi nào ? 
+      - Tôi cần nạp hồ sơ vào ngày nào ? 
+      - Hạn chọt nàp hồ sơ vào ngày nào ? 
+      - Thời gian nạp hồ sơ ?
+
+  - intent: ask_scholarshiP_register_method
+    examples: |
+      - Làm cách nào để đăng ký tham gia học bổng này ?
+      - Đăng ký tham gia học bổng này như thế nào ?
+      - Cách tham gia học bổng ?
+      - Cách thức tham gia học bổng? 
+
+  - intent: ask_scholarship_money
+    examples: |
+      - Học bổng hỗ trợ được bao nhiêu tiền? 
+      - Số tiền học bổng này hỗ trợ ? 
+      - số tiền của học bổng ? 
+  - intent: ask_scholarship_time
+    examples: |
+      - Thời gian học bao lâu ? 
+      - Chương trình học kéo dài bao lâu ? 
+      - Khi nào kết thúc đợt học bổng này ? 
+
+  # - intent: ask_scholarship_details
+  #   examples: |
+  #     - Chi tiết về học bổng [học bổng khuyến khích](scholarship_name)?
+  #     - Thông tin về học bổng [học bổng khuyến khích](scholarship_name)?
+
+  # - intent: ask_required_scholarship
+  #   examples: |
+  #     - Điều kiện để đạt được học bổng [học bổng du học](scholarship_name)? 
+  #     - Điều kiện [học bổng du học](scholarship_name)?
+  #     - Cần những điều kiện gì để đạt học bổng [học bổng du học](scholarship_name)? 
+  #     - Giành được học bổng [học bổng du học](scholarship_name) cần những điều kiện gì? 
+  #     - Làm thế nào để giành được học bổng [học bổng du học](scholarship_name)? 
+  #     - Điều kiện để giành được học bổng [học bổng du học](scholarship_name)? 
+# kiểm tra một học bổng có trong danh sách của trường 
+  # - intent: check_scholarship
+  #   examples: |
+  #     - Trường có học bổng [học bổng khuyến khích](scholarship_name) này không ?
+  #     - Trong các loại học bổng của trường có học bổng [học bổng khuyến khích](scholarship_name) này không ?
+  #     - [học bổng khuyến học](scholarhip_name) có loại học bổng này trong trường không ?
+  #     - Trường có chương trình [học bổng đại học](scholarship_name)  này không ? 
+
+# NHÓM MÔ TẢ QUÁ TRÌNH NỘP HỒ SƠ VÀ THỦ TỤC LIÊN QUAN
+  # - intent: ask_scholarship_processing_detail
+  #   examples: |
+  #     - Hồ sơ của học bổng [học bổng du học](scholarship_name) bao gồm những gì ? 
+  #     - 

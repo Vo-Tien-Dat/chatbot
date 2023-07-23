@@ -1,0 +1,41 @@
+version: "3.1"
+
+intents: 
+  - greet
+  - greet_introduce
+  - greet_with_infor
+  - thanks
+  - goodbye
+
+entities: 
+  - person_name
+
+slots:
+  slot_person_name: 
+    type: any
+    mappings: 
+      - type: from_entity
+        entity: person_name
+
+actions: 
+  - action_greet_with_infor
+
+responses: 
+  utter_greet: 
+    - text: Xin chào bạn! Bạn cần giúp gì
+
+  utter_greet_introduce: 
+    - text: Tôi được tạo bởi Võ Tiến Đạt
+
+  utter_please_rephrase: 
+    - text: Tôi rất xin lỗi, tôi không hiểu ý bạn là gì
+
+  utter_thanks: 
+    - text: Đây là nhiệm vụ của chúng tôi! Rất hận hạng được phục vụ bạn
+  
+  utter_goodbye: 
+    - text: Tạm biệt bạn! Rất hân hạnh có thể giúp bạn vào lần sau 
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

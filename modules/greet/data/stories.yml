@@ -1,0 +1,27 @@
+version: "3.1"
+
+stories: 
+  - story: greet user 
+    steps: 
+    - intent: greet
+    - action: utter_greet
+
+  - story: greet introduce chat bot
+    steps: 
+    - intent: greet_introduce
+    - action: utter_greet_introduce
+  
+  - story: greet with information 
+    steps:
+    - intent: greet_with_infor
+    - action: action_greet_with_infor
+
+  - story: thank you 
+    steps: 
+      - intent: thanks
+      - action: utter_thanks
+
+  - story: goodbye
+    steps: 
+      - intent:  goodbye
+      - action: utter_goodbye
