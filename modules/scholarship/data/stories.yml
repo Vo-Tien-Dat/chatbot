@@ -12,4 +12,27 @@ stories:
     - intent: ask_scholarship_details
     - action: action_detail_scholarship
 
-  
+  - story: ask scholarshop conditions
+    steps: 
+    - intent: ask_for_scholarship_conditions
+    - action: action_scholarship_conditions
+
+  - story: ask scholarship documents
+    steps: 
+    - intent: ask_for_scholarship_documents
+    - action: action_scholarship_documents
+
+  - story: ask for scholarship deadlines
+    steps: 
+    - intent: ask_for_scholarship_deadline
+    - action: action_scholarship_deadline
+
+  - story: ask for scholarship money
+    steps: 
+    - intent: ask_for_scholarship_money
+    - action: action_scholarship_money
+
+  - story: ask for scholarship time
+    steps: 
+    - intent: ask_for_scholarship_time
+    - action: action_scholarship_time

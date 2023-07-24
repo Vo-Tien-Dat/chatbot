@@ -26,5 +26,57 @@
                 
             }
         }
+    }, 
+    "scholarship_conditions": {
+        "1": {
+            "name": "Thành tích học tập",
+            "description":"Ba năm đại học của bạn phải đủ trên 6.5 mới có đủ cơ hội xét tuyển" 
+        },
+        "2": {
+            "name": "Thành tích hoạt động ngoại khóa",
+            "description": "Thành tích ngoại khóa bạn phải đạt ở thành tích cực tốt"
+        },
+        "3": {
+            "name": "Điều kiện tài chính",
+            "description": "Chứng minh tài chính đủ để để hoạt đông có thể đủ"
+        }
+    },
+    "scholarship_documents": {
+        "1": {
+            "name": "bảng điểm",
+            "description": "Bảng điểm là một trong những yếu tổ quan trọng nhất và thường đánh giá khả năng học tập và nghiên cứu của sinh viên"
+        },
+        "2": {
+            "name": "Đơn xin học bổng",
+            "description": "Đơn xin học bổng là tài liệu quan trọng để giới thiệu bản thân của sinh viên và giải thích tại sao họ xứng đáng được cấp học bổng. Đơn xin học bổng thường được yêu cầu những thông tin cơ bản"
+        }, 
+        "3": {
+            "name": "Thư giới thiệu", 
+            "description": "Thư giới thiệu từ giảng viên, nhà nghiên cứu, hoặc người quen có thể giúp cho sinh viên tăng cơ hội được nhận học bổng"
+        },
+        "4": {
+            "name": "Bài luận", 
+            "description": "Nếu học bổng yêu cầu, sinh viên có thể việt một bài luận này thường được đánh giá dựa trên nội dung, cấu trúc, ý tưởng"
+        },
+        "5": {
+            "name": "Giấy chứng nhận",
+            "description": "Một số yêu cầu học bổng chứng nhận sinh viên cung cấp chứng chỉ tiếng anh"
+        }
+    },
+    "deadline": "29-01-2023 10:00:00", 
+    "documents": {
+
+    },
+    "scholarship_money":{
+        "value": "1000",
+        "type": "$"
+    },
+    "scholarship_time": {
+        "value": "1", 
+        "type": "year"
+    }, 
+    "method": {
+        "name": "", 
+        "description": ""
     }
 }

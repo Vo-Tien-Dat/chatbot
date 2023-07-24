@@ -10,27 +10,53 @@
  ### NHỮNG VẤN ĐỀ QUAN TÂM VỀ MỘT HỌC BỔNG
 
  * Hỏi về điệu kiện để được cấp về một học bổng 
+   Tên ý định: 
     - ask_scholarship_conditions
+   
+   Mô tả: 
+   - Hiển thị danh sách các điều kiện để được học bổng
 
  * Hỏi những quá trình nộp đơn và thủ tục liên quan đến một học bổng
+   Tên ý định
     - ask_scholarship_documents
 
+   Mô tả: 
+    - Hỏi về những hồ sơ cần nộp cho đợt dành học bổng
+
  * Hỏi về hạn nộp về một học bổng
+   Tên ý định: 
     - ask_scholarship_deadline
 
- * Hỏi về phương thức đăng ký 
+   Mô tả: 
+   Yêu cầu về hạn nộp hồ sơ học bổng
+
+ <!-- * Hỏi về phương thức đăng ký 
+   Tên ý định
     - ask_scholarship_register_method
 
+   Mô tả:  -->
+   
+
  * Số lượng tiền học bổng
+   Tên ý định
     - ask_scholarship_money
 
- * Thời gian học tập 
+   Mô tả: 
+   yêu cầu chi tiết về số tiền học của những đợt học bổng
+
+ * Thời gian học tập của học bổng
+   Tên ý định
+
     - ask_scholarship_time
+   
+   Mô tả: 
+   Yêu cầu về thời gian học của một học bổng 
+
 
 ### NGOÀI RA 
  * Yêu cầu tư vấn để chọn các loại học bổng phù hợp với nhu cầu và mục tiêu học tập 
 
-#### II. MỤC TIÊU
+#### II. MỤC TIÊU ĐẠT ĐƯỢC
 #### NHÓM HỎI VỀ THÔNG TIN CHUNG LIÊN QUAN ĐẾN HỌC BỔNG
  * Chatbot có thể liệt kê được danh sách các học bổng của trường
 

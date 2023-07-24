@@ -1,0 +1,49 @@
+version: "3.1"
+
+intents: 
+  - ask_admission_criteria
+  - ask_admission_method
+  - ask_register_time
+  # - check_register_time
+  # - ask_register_document
+  # - check_register_document
+  # - ask_register_document_of_admission_method
+  - greet
+
+  - ask_for_information_about_training_programs
+  - ask_for_admission_requirements  
+  - ask_for_training_costs
+  - ask_for_employment_opportunities
+  - ask_for_student_activities
+  - ask_for_student_services
+
+actions:
+  - action_greet
+  - action_admission
+  - action_admission_method
+  - action_register_time
+  # - action_check_register_time
+  - action_information_about_training_programs
+  - action_admission_requirements
+  - action_training_costs
+  - action_employment_opportunities
+  - action_student_activities
+  - action_student_services
+  - action_facilities
+
+
+responses: 
+
+  utter_admission: 
+    - text: "Gồm nhưng thông tin tuyển sinh sau"
+
+  utter_admission_method: 
+    - text: "Phương thức tuyển sinh"
+
+  utter_please_rephrase: 
+    - text: Tôi rất xin lỗi, tôi không hiểu ý bạn là gì
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

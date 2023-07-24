@@ -1,0 +1,84 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - xin chào
+      - chào cậu
+# yêu cầu tiêu chí tuyển sinh của trường
+  - intent: ask_admission_criteria
+    examples: |
+      - Trường yêu cầu những điều kiện gì cho việc xét tuyển vào trường? 
+      - Điều kiện để xét tuyển ?
+      - Nếu tôi muốn nộp đơn xin vào trường, tôi cần phải đạt những tiêu chí gì của tường?
+      - Điều kiện gì để được xét tuyển vào trường? 
+      - Cần đạt tiêu chí gì để xét tuyển vào trường?
+      - Có thể kể tên tiêu chí cần đạt để xét tuyển vào trường không? 
+
+# Yêu cầu phương thức tuyển sinh của trường 
+  - intent: ask_admission_method
+    examples: |
+      - Những phương thức tuyển sinh của trường? 
+      - Phương thức tuyến sinh? 
+      - Trường có những phương thức tuyển sinh nào? 
+      - Phương thức để xét tuyển vào trường?
+      - Phương thức xét tuyển của trường ?  
+
+# Yêu cầu thời gian đăng ký
+  - intent: ask_register_time
+    examples: |
+      - Thời gian đăng ký để xét tuyển vào trường? 
+      - Đăng ký xét tuyển vào trường vào thời gian nào?
+      - Thời gian xét tuyển? 
+      - Đăng ký xét tuyển vào khi nào?  
+
+  - intent: ask_for_information_about_training_programs
+    examples: |
+      - Cho em hỏi về chương trình đào tạo
+      - Tôi muốn tìm hiểu về chương trình đào tạo
+
+  - intent:  ask_for_admission_requirements
+    examples: |
+      - Yêu cầu đầu vào của chương trình ? 
+      - Tôi muốn biết yêu cầu đầu vào của chương trình 
+      - Có yêu cầu đầu vào của chương trình ? 
+
+  # - intent: ask_for_registration_deadlines
+  #   examples: |
+  #     - Thời gian đăng ký chương trình
+  #     - Thời gian xét tuyển của trường  
+  #     - Thời gian tuyển sinh?
+
+  - intent: ask_for_training_costs
+    examples: |
+      - Chi phí đào tạo cho chương trình 
+      - Khoản chi phí đào tạo cho chương trình?
+      - Chi phí cho chương trình ? 
+      - Chi phí đào tạo? 
+
+  - intent: ask_for_employment_opportunities
+    examples: |
+      - Cơ hội làm việc sau khi ra trường? 
+      - Cơ hội sau khi ra trường ? 
+      - Cơ hội làm việc sau khi tốt nghiệp? 
+      - Cơ hội sau tốt nghiệp? 
+
+  - intent: ask_for_student_activities
+    examples: |
+      - Các hoạt động dành cho sinh viên ở trường ? 
+      - Hoạt động sinh viên trong trường ? 
+      - Trường tổ chức các hoạt động gì dành cho sinh viên? 
+      - Hoạt động dành cho sinh viên? 
+  
+  - intent: ask_for_student_services
+    examples: |
+      - Các dịch vụ dành cho sinh viên? 
+      - Sinh viên được hưởng những dịch vụ gì của trường ? 
+      - Dịch vụ của sinh viên? 
+
+
+  - intent: ask_for_facilities
+    examples: |
+      - Cơ sở vật chất của trường ? 
+      - Cơ sở vật chất ? 
+      - vật chất? 

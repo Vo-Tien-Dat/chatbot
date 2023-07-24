@@ -1,0 +1,58 @@
+version: "3.1"
+
+stories: 
+  - story: only admission criteria 
+    steps: 
+    - intent: ask_admission_criteria
+    - action: action_admission
+
+  - story: admissison criteria
+    steps: 
+    - intent: ask_admission_criteria
+    - action: action_admission
+    - intent: ask_admission_method
+    - action: action_admission_method
+
+  - story: admission method
+    steps: 
+    - intent: ask_admission_method
+    - action: action_admission_method
+
+  - story: greet user
+    steps: 
+    - intent: greet
+    - action: action_greet
+    - intent: ask_admission_method
+    - action: action_admission_method
+
+
+  - story: ask register time in admission
+    steps: 
+    - intent: ask_register_time
+    - action: action_register_time
+
+
+  - story: ask information about training programs
+    steps: 
+    - intent: ask_for_information_about_training_programs
+    - action: action_information_about_training_programs
+
+  - story: ask for admission requirement
+    steps: 
+    - intent: ask_for_admission_requirements  
+    - action: action_admission_requirements
+
+  - story: ask for training costs
+    steps: 
+    - intent: ask_for_training_costs
+    - action: action_training_costs
+
+  - story: ask for employment opportunities
+    steps: 
+    - intent: ask_for_employment_opportunities
+    - action: action_employment_opportunities
+
+  - story: ask for student activities
+    steps: 
+    - intent: ask_for_student_activities
+    - action: action_student_activities

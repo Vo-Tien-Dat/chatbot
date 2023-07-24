@@ -5,12 +5,24 @@ intents:
   - ask_scholarship_details
   - check_scholarship
 
+  - ask_for_scholarship_conditions
+  - ask_for_scholarship_documents
+  - ask_for_scholarship_deadline
+  - ask_for_scholarship_money
+  - ask_for_scholarship_time
+
 entities:
   - scholarship_name
 
 actions:  
   - action_list_of_scholarships
   - action_detail_scholarship
+
+  - action_scholarship_conditions
+  - action_scholarship_documents
+  - action_scholarship_deadline
+  - action_scholarship_money
+  - action_scholarship_time
 
 responses:
 
