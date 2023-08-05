@@ -1,0 +1,17 @@
+version: "3.1"
+
+nlu:
+  - intent: ask_for_list_all_courses_in_major
+    examples: |
+      - Những môn học trong ngành [an toàn thông tin](major)? 
+      - Liệt kê những môn học của ngành [an toàn thông tin](major)?
+      - Hoc ngành [an toàn thông tin](major) cần học những môn gì ? 
+      - Học những môn gì khi hoc ngành [an toàn thông tin](major) ? 
+  
+  - intent: ask_for_list_all_lecturer_in_major
+    examples: |
+      - Những giảng viên trong ngành [an toàn thông tin][major]? 
+      - Giảng viên trong ngành [an toàn thông tin](major)? 
+      - Ngành [an toàn thông tin](major) có những giảng viên nào? 
+
+  

@@ -1,0 +1,29 @@
+version: "2.0"
+recipe: "default.v1"
+language: vi
+pipeline:
+  # - name: WhitespaceTokenizer
+  - name: vietnamese_tokenizer.VietnameseTokenizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    entity_recognition: true
+    epochs: 100
+  - name: FallbackClassifier
+    threshold: 0.7
+
+policies:
+- name: MemoizationPolicy
+- name: TEDPolicy
+  constrain_similarities: true
+  max_history: 5
+  epochs: 100
+- name: RulePolicy
+
+model:
+  name: major
+assistant_id: 20230721-171547-grandioso-diffraction

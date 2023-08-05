@@ -36,7 +36,8 @@ nlu:
     examples: |
       - Cho em hỏi về chương trình đào tạo
       - Tôi muốn tìm hiểu về chương trình đào tạo
-
+      - Chương trình đào tạo
+      
   - intent:  ask_for_admission_requirements
     examples: |
       - Yêu cầu đầu vào của chương trình ? 

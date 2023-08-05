@@ -1,0 +1,27 @@
+version: "3.1"
+
+intents: 
+
+  - ask_for_list_all_courses_in_major
+  - ask_for_list_all_lecturer_in_major
+
+entities: 
+  - major
+
+actions:
+  - action_list_all_courses_in_major
+  - action_list_all_lecturer_in_major
+
+
+responses: 
+
+  utter_major: 
+    - text: "Những ngành học của bạn"
+
+  utter_please_rephrase: 
+    - text: Tôi rất xin lỗi, tôi không hiểu ý bạn là gì
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

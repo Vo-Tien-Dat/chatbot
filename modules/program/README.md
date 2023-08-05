@@ -1,6 +1,3 @@
-### Xây dựng tính năng tư vấn tuyển sinh của trường
-
-
 #### THÔNG TIN LIÊN QUAN ĐẾN QUÁ TRÌNH TUYỂN SINH
  * Hỏi về thông tin chương trình đào tạo
 

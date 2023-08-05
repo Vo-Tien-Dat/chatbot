@@ -1,0 +1,14 @@
+version: "3.1"
+
+stories: 
+  - story: list all courses in major 
+    steps: 
+    - intent: ask_for_list_all_courses_in_major
+    - action: action_list_all_courses_in_major
+
+  - story: list all lecturer in major
+    steps: 
+    - intent: ask_for_list_all_lecturer_in_major
+    - action: action_list_all_lecturer_in_major
+
+  
