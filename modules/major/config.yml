@@ -2,8 +2,8 @@ version: "2.0"
 recipe: "default.v1"
 language: vi
 pipeline:
-  # - name: WhitespaceTokenizer
-  - name: vietnamese_tokenizer.VietnameseTokenizer
+  - name: WhitespaceTokenizer
+  # - name: tokenizers.whitespace_tokenizer.WhitespaceTokenizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
@@ -13,6 +13,7 @@ pipeline:
   - name: DIETClassifier
     entity_recognition: true
     epochs: 100
+  - name: EntitySynonymMapper
   - name: FallbackClassifier
     threshold: 0.7
 

@@ -1,12 +1,20 @@
 version: "3.1"
 
 intents: 
-
   - ask_for_list_all_courses_in_major
   - ask_for_list_all_lecturer_in_major
 
 entities: 
   - major
+
+
+slots: 
+  major:
+      type: text
+      influence_conversation: false
+      mappings:
+      - type: from_entity
+        entity: major
 
 actions:
   - action_list_all_courses_in_major
@@ -14,7 +22,6 @@ actions:
 
 
 responses: 
-
   utter_major: 
     - text: "Những ngành học của bạn"
 

@@ -18,14 +18,6 @@ stories:
     - intent: ask_admission_method
     - action: action_admission_method
 
-  - story: greet user
-    steps: 
-    - intent: greet
-    - action: action_greet
-    - intent: ask_admission_method
-    - action: action_admission_method
-
-
   - story: ask register time in admission
     steps: 
     - intent: ask_register_time

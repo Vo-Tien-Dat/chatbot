@@ -1,10 +1,10 @@
 version: "3.1"
 
 nlu:
-  - intent: greet
-    examples: |
-      - xin chào
-      - chào cậu
+  # - intent: greet
+  #   examples: |
+  #     - xin chào
+  #     - chào cậu
 # yêu cầu tiêu chí tuyển sinh của trường
   - intent: ask_admission_criteria
     examples: |

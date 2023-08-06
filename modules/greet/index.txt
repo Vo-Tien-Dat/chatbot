@@ -1,0 +1,8 @@
+access_token:
+EAANuXoz7BHYBO1PraDLFZCZCiMF4uvFMiLLZCKgaMdA1FiFctieFByxEUHAxoZACyZCZAZCdGqlCfLam40yS2LzYkwM4SxxY3biQ4DX1LDdNjSX9q4VYxUggwKEm3vI8ob6p4INZAqksJOZCTW0xgq5uKq02QaHZCZAmaQvb0MTCPpdhhBAZC159x3tLm94Okv8TJUyJ
+
+app_secret: 
+2fe5332cb2e0d0696b63d6df63e34c45
+
+https://d5e0-58-187-140-67.ngrok.io/webhooks/facebook/webhook
+ngrok config add-authtoken 2TYUY72Vvks9s0REV0HWhG5JY46_7RL2ZrLNG3HTQSRQnoNLB

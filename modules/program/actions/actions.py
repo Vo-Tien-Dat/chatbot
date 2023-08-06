@@ -1,9 +1,12 @@
 from typing import Any, Text, Dict, List
+
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 import json
 from datetime import datetime
-import common as commmon
+import common as common
+import requests
+
 
 # ĐỌC DỮ LIỆU TẠM THỜI BẰNG FILE JSON
 def read_json(fileName: Text): 
@@ -86,7 +89,7 @@ class ActionGreet(Action):
 
         return []
     
-
+# liên quan đến chương trình đào tạo
 class ActionInformamtionAboutTrainingPrograms(Action): 
     def name(self) -> Text:
         return "action_information_about_training_programs"
@@ -101,6 +104,7 @@ class ActionInformamtionAboutTrainingPrograms(Action):
 
         return []
 
+# liên quan đến yêu cầu tuyển sinh
 class ActionAdmissionRequirements(Action): 
     def name(self) -> Text:
         return "action_admission_requirements"
@@ -110,11 +114,14 @@ class ActionAdmissionRequirements(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         message = "Xin chào mọi người"
+        requirements = requests.get('http://127.0.0.1:5000/program/read/admission_conditions')
+        print(requirements.json())
 
         dispatcher.utter_message(text = message)
 
         return []
 
+# Liên quan đến chi phí học hành
 class ActionTraningCosts(Action): 
     def name(self) -> Text:
         return "action_training_costs"
@@ -133,11 +140,12 @@ class ActionTraningCosts(Action):
         costType = detailCost[1]
 
         message = "Chi phí của ngành {} trong vòng {} {} sẽ có {} tín chỉ với mới tin chỉ {}. Và tổng chi phí hết là {} ".format(majorName, studyTime, studyTimeType, costValue, costType, cost)
-
+        message = "hello"
         dispatcher.utter_message(text = message)
 
         return []
-    
+
+# Liên quan đến cơ hội việc làm 
 class ActionEmployementOpportunities(Action): 
     def name(self) -> Text:
         return "action_employment_opportunities"
@@ -167,7 +175,8 @@ class ActionEmployementOpportunities(Action):
         dispatcher.utter_message(text = message)
 
         return []
-    
+
+# liên quan đến các hoạt động của sinh viên   
 class ActionStudentActivities(Action): 
     def name(self) -> Text:
         return "action_student_activities"
@@ -203,7 +212,8 @@ class ActionStudentActivities(Action):
         dispatcher.utter_message(text = message)
 
         return []
-    
+
+# liên quan đến dịch vụ của sinh viên
 class ActionStudentServices(Action): 
     def name(self) -> Text:
         return "action_student_services"
@@ -218,6 +228,7 @@ class ActionStudentServices(Action):
 
         return []
     
+# liên quan đến cơ sở vật chất của trường
 class ActionFacilities(Action): 
     def name(self) -> Text:
         return "action_facilities"

@@ -1,0 +1,5 @@
+rules:
+- rule: Custom rule example
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase

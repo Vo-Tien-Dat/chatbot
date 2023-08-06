@@ -87,9 +87,35 @@
             }
         },
         "workshop_and_events": {
+            "1": {
+                "title": "Work shop on Machine Learning", 
+                "date": "2023-09-08",
+                "description": "Với sự tham gia của các các công ty lớn trong và ngoài nước"
+            },
+            "2": {
+                "title": "Buổi workshop của Tập đoàn bưu chính viễn thông", 
+                "date": "2023-09-18",
+                "description": "Với sự tham gia của các các công ty lớn trong và ngoài nước"
+            }
         }, 
-        "intership_and_practice_training": {}, 
-        "scientific_research": {}
+        "intership_and_practice_training": {
+            "1": {
+                "title": "Thực tập tốt nghiệp", 
+                "begin_date": "2023-09-18",   
+                "end_date": "2023-09-18",
+                "description": "",
+                "condition": ""
+            }
+        }, 
+        "scientific_research": {
+            "1": {
+                "title": "Nghiên cứu khoa học", 
+                "begin_date": "", 
+                "end_date": "",
+                "description": "",
+                "condition": ""
+            }
+        }
     },
     "student_services": {}, 
     "student_facilities": {}

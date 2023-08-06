@@ -1,17 +1,64 @@
 version: "3.1"
 
 nlu:
+
+  # - synonym: acounting
+  #   examples: | 
+  #     - kế toán 
+  #     - kế toán viên
+  #     - kế
+
+  # - synonym: information_security
+  #   examples: |
+  #     - an toàn thông tin
+  #     - an toàn 
+  #     - an 
+  
+  # - synonym: information_techonology
+  #   examples: |
+  #     - công nghệ thông tin 
+  #     - công nghệ
+  #     - công
+  
+  # - synonym: bussiness_management
+  #   examples: |
+  #     - Quản trị kinh doanh
+  #     - Quản trị
+  #     - Quản
+
+  # - synonym: cong_nghe_thong_tin
+  #   examples: |
+  #     - Công nghệ thông tin
+  #     - Công nghệ
+    
+  # - synonym: quan_tri_kinh_doanh
+  #   examples: |
+  #     - Quản trị kinh doanh
+  #     - Quản trị
+
+  # - synonym: an_toan_thong_tin
+  #   examples: |
+  #     - An toàn thông tin
+  #     - An toàn
+
+
+
   - intent: ask_for_list_all_courses_in_major
     examples: |
       - Những môn học trong ngành [an toàn thông tin](major)? 
       - Liệt kê những môn học của ngành [an toàn thông tin](major)?
       - Hoc ngành [an toàn thông tin](major) cần học những môn gì ? 
+      - Hoc ngành [Quản trị kinh doanh](major) cần học những môn gì ? 
+      - Hoc ngành [Kế toán](major) cần học những môn gì ?
       - Học những môn gì khi hoc ngành [an toàn thông tin](major) ? 
   
   - intent: ask_for_list_all_lecturer_in_major
     examples: |
-      - Những giảng viên trong ngành [an toàn thông tin][major]? 
+      - Những giảng viên trong ngành [an toàn thông tin](major)? 
+      - Những giảng viên trong ngành [công nghệ thông tin](major)? 
+      - Giảng viên trong ngành [kế toán](major)? 
       - Giảng viên trong ngành [an toàn thông tin](major)? 
       - Ngành [an toàn thông tin](major) có những giảng viên nào? 
+      - Ngành [quản trị kinh doanh](major) có những giảng viên nào? 
 
   
