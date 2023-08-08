@@ -6,3 +6,5 @@ app_secret:
 
 https://d5e0-58-187-140-67.ngrok.io/webhooks/facebook/webhook
 ngrok config add-authtoken 2TYUY72Vvks9s0REV0HWhG5JY46_7RL2ZrLNG3HTQSRQnoNLB
+
+/webhooks/facebook/webhook

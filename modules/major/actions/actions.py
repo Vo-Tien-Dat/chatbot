@@ -74,6 +74,7 @@ class ActionListAllCoursesInMajor(Action):
 
         try: 
             major_name = classify_major_value[0]
+            print(major_name)
             if check_existing_major(major_name=major_name) == False:
                 raise ValueError("Chúng tôi không có mảng này")
             
@@ -90,7 +91,7 @@ class ActionListAllCoursesInMajor(Action):
         dispatcher.utter_message(text=message)
         return []
     
-
+# XÂY DỰNG DÀNH ĐỂ TÌM GIÁO VIÊN HỖ TRỢ GIẢNG DẠY 
 class ActionListAllLecturerInMajor(Action):
     def name(self) -> Text:
         return "action_list_all_lecturer_in_major"

@@ -1,10 +1,7 @@
 version: "3.1"
 
 nlu:
-  # - intent: greet
-  #   examples: |
-  #     - xin chào
-  #     - chào cậu
+
 # yêu cầu tiêu chí tuyển sinh của trường
   - intent: ask_admission_criteria
     examples: |
@@ -44,11 +41,6 @@ nlu:
       - Tôi muốn biết yêu cầu đầu vào của chương trình 
       - Có yêu cầu đầu vào của chương trình ? 
 
-  # - intent: ask_for_registration_deadlines
-  #   examples: |
-  #     - Thời gian đăng ký chương trình
-  #     - Thời gian xét tuyển của trường  
-  #     - Thời gian tuyển sinh?
 
   - intent: ask_for_training_costs
     examples: |

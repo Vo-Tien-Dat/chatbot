@@ -14,34 +14,15 @@ pipeline:
     entity_recognition: false
     epochs: 100
   - name: FallbackClassifier
-    threshold: 0.7
-# - name: "WhitespaceTokenizer"
-  # - name: "VietnameseTokenizer"
-# - name: "CountVectorsFeaturizer"
-# - name: "DIETClassifier"
-# - name: "CRFEntityExtractor"
-  # - name: "EntitySynonymMapper"
-  # - name: WhitespaceTokenizer
-  # - name: LexicalSyntacticFeaturizer
-  # - name: CRFEntityExtractor
-  # - name: RegexEntityExtractor
-  # - name: DIETClassifier
+    threshold: 0.95
 
-  # - name: WhitespaceTokenizer
-  # - name: LexicalSyntacticFeaturizer
-  # - name: CountVectorsFeaturizer
-  # - name: RegexEntityExtractor
-  # - name: DIETClassifier
-    # entity_recognition: true
-  # - name: FallbackClassifier
-  #   threshold: 0.7
 policies:
-- name: MemoizationPolicy
-- name: TEDPolicy
-  constrain_similarities: true
-  max_history: 5
-  epochs: 100
-- name: RulePolicy
+  - name: MemoizationPolicy
+  - name: TEDPolicy
+    constrain_similarities: true
+    max_history: 5
+    epochs: 100
+  - name: RulePolicy
 
 model:
   name: admission

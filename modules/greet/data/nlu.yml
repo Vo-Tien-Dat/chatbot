@@ -15,13 +15,6 @@ nlu:
       - Bạn đến từ đâu? 
       - Công việc của bạn là gì? 
       - Ai là người tạo ra bạn? 
-
-  - intent: greet_with_infor
-    examples: | 
-      - Tôi tên là [Vo Dat](person_name)
-      - Tôi là [Vo Dat](person_name)
-      - Xin chào! Tôi tên là [Vo Dat](person_name)
-      - Chào! Tôi tên là [Vo Dat](person_name)
   
   - intent: thanks
     examples: |

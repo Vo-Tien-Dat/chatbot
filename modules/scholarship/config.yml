@@ -6,9 +6,6 @@ pipeline:
   - name: WhitespaceTokenizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
-    OOV_token: "__oov__"
-    max_df: 0.9
-    min_df: 5
   - name: CountVectorsFeaturizer
     analyzer: char_wb
     min_ngram: 1

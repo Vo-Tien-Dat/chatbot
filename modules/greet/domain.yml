@@ -17,8 +17,8 @@ slots:
       - type: from_entity
         entity: person_name
 
-actions: 
-  - action_greet_with_infor
+# actions: 
+#   - action_greet_with_infor
 
 responses: 
   utter_greet: 
@@ -35,6 +35,16 @@ responses:
   
   utter_goodbye: 
     - text: Tạm biệt bạn! Rất hân hạnh có thể giúp bạn vào lần sau 
+
+  utter_welcome: 
+    - text: Xin chào! Tôi là chatbot để giải đáp các thônh tin sau
+      quick_replies:
+       - title: Tuyển sinh
+         payload: /thanks
+       - title: Học bổng
+         payload: /thanks
+       - title: Chương trình đào tạo
+         payload: /thanks
 
 session_config:
   session_expiration_time: 60
